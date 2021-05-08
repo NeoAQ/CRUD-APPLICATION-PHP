@@ -12,25 +12,24 @@
 
 <?php
     include 'connection.php';
-    $sql="Select * from contacts";
+    $sql="Select * from books";
     $resultado= mysqli_query($conn,$sql);
     ?>
 
-<a href="agregarprestamo.php"><button>Agregar prestamo</button></a>
+<a href="createbook.php"><button>Agregar libro</button></a>
     
     <div>
         <table>
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>Nombre</th>
-                    <th>Matricula</th>
-                    <th>Titulo</th>
-                     <th>Author</th>
-                    <th>Paginas</th>
-                    <th>Idioma</th>
-                    <th>Fecha</th>
-                    <th>Estatus</th>
+                    <th>Title</th>
+                    <th>author</th>
+                    <th>pages</th>
+                     <th>language</th>
+                    <th>quantity</th>
+                    <th>category</th>
+                    <th>Acciones</th>
                     </tr>
             </thead>
             <tbody>
@@ -44,16 +43,14 @@
           <tr>
                <th> <?php echo $filas['id']?></th>
                 <th><?php echo $filas['name']?></th>
-               <th><?php echo $filas['id_student']?></th>
-                <th><?php echo $filas['title']?></th>
-                <th><?php echo $filas['author']?></th>
-                 <th><?php echo $filas['pages']?></th>
+               <th><?php echo $filas['author']?></th>
+                <th><?php echo $filas['pages']?></th>
                 <th><?php echo $filas['language']?></th>
-                <th><?php echo $filas['date']?></th>
-                <th><?php echo $filas['status']?></th>
+                 <th><?php echo $filas['quantity']?></th>
+                <th><?php echo $filas['category']?></th>
                 <th>
-              <button> <a href="updateprestamo.php?id=<?php echo $filas['id']?>"> Editar </a> </button>
-              <button> <a href="deleteprestamo.php?id=<?php echo $filas['id']?>"> Eliminar </a> </button>
+              <button> <a href="updatebook.php?id=<?php echo $filas['id']?>"> Editar </a> </button>
+              <button> <a href="deletebook.php?id=<?php echo $filas['id']?>"> Eliminar </a> </button>
 
                 </th>
                  
