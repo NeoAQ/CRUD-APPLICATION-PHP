@@ -1,0 +1,27 @@
+.container{
+   margin-left:15%;
+    width: 70%;
+    background-color: rgb(66, 111, 151);
+    margin-bottom: 50px;
+   
+    
+}
+
+#centeredbtn{
+    margin-left :50%;
+    margin-top: 50 px;
+}
+
+table{
+    border-style:  solid;
+    border-color: black;
+    border-width: 5px;
+
+  
+}
+
+th{
+    border-style:  solid;
+    border-color: rgb(53, 40, 40);
+    border-width: 2px;
+}

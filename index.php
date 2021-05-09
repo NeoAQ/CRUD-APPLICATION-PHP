@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Libros</title>
 
 </head>
@@ -15,9 +16,8 @@
     $sql="Select * from contacts";
     $resultado= mysqli_query($conn,$sql);
     ?>
+<div class="container">
 
-<a href="agregarprestamo.php"><button>Agregar prestamo</button></a>
-    
     <div>
         <table>
             <thead>
@@ -64,9 +64,13 @@
             </tbody>
         </table>
     </div>
-
+    </div>
 
     
+    <a id = "centeredbtn"   href="agregarprestamo.php"><button>Agregar prestamo</button></a>
+  
+      
+   
 
 
 
